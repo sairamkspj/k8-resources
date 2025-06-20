@@ -8,7 +8,11 @@ spec :
     image :  nginx:stable-perl
     resources:
       requests:
-        cpu: "500m"
-        memory: "256Mi"
-
+        cpu: "500m"       # Request 0.5 CPU cores (500 millicores)
+        memory: "256Mi"   # Request 256 MiB of memory
+      limits:
+        cpu: "1"          # Limit CPU usage to 1 core
+        memory: "512Mi"   # Limit memory usage to 512 MiB
+    ports:
+    - containerPort: 80
     
