@@ -1,0 +1,16 @@
+kind : Pod
+apiVerion : v1
+metadata:
+  name : cpu
+spec:
+  containers:
+    - name : nginx
+      image : nginx
+      resources:
+        requets:
+          cpu : 100m
+          memory : 68mi
+        limits:
+          cpu : 120m
+          memory :100mi
+        
