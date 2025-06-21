@@ -4,15 +4,15 @@ metadata :
   name : cpu
 spec:
   containers:
-    - name : nginx
-      image : nginx
-      resources :
-        requests :
-          cpu : 100m
-          memory : 68mi
-        limits :
-          cpu : 120m
-          memory : 100mi
+  - name : nginx
+    image : nginx
+    resources :
+      requests :
+        cpu : 100m
+        memory : 68mi
+      limits :
+        cpu : 120m
+        memory : 100mi
         
 # kind: Pod
 # apiVersion: v1
